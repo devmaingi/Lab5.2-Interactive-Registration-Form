@@ -1,3 +1,10 @@
+<!-- ///Set the novalidate attribute to the form.
+Add validation in HTML to all 4 inputs
+Select the HTML elements in the JS file.
+Add event listeners to your inputs, pass the handler function, or declare the handler function separately (validateField) to do the validation.
+Add an event listener to the form for the 'submit' event. If everything is valid, show a success message. -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,7 +20,7 @@
       <form id="registrationForm" novalidate>
         <div class="form-group">
           <label for="username">Username:</label>
-          <input type="text" id="username" name="username" />
+          <input type="text" id="username" name="username" required/>
           <span class="error-message" id="usernameError"></span>
         </div>
         <div class="form-group">
